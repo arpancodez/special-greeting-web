@@ -52,6 +52,12 @@ canvas {
 .letter:nth-child(4) { animation-delay: 0.3s; color: #ff6b6b; }
 .letter:nth-child(5) { animation-delay: 0.4s; color: #a8e6cf; }
 .letter:nth-child(6) { animation-delay: 0.5s; color: #ffd93d; }
+.letter:nth-child(7) { animation-delay: 0s; color: #ff6b6b; }
+.letter:nth-child(8) { animation-delay: 0.1s; color: #4ecdc4; }
+.letter:nth-child(9) { animation-delay: 0.2s; color: #ffd93d; }
+.letter:nth-child(10) { animation-delay: 0.3s; color: #ff6b6b; }
+.letter:nth-child(11) { animation-delay: 0.4s; color: #a8e6cf; }
+.letter:nth-child(12) { animation-delay: 0.5s; color: #ffd93d; }
 
 @keyframes bounce {
     0%, 100% {
