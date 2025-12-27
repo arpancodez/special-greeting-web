@@ -597,3 +597,27 @@ canvas {
         -moz-osx-font-smoothing: grayscale;
     }
 }
+
+
+/* Optimize mobile spacing - remove excessive gaps */
+@media (max-width: 479px) {
+    .greeting-title {
+        margin-bottom: 10px !important;
+    }
+    
+    .message-section {
+        margin: 5px 0 !important;
+    }
+    
+    .countdown {
+        margin: 8px 0 !important;
+    }
+    
+    .form-section {
+        margin: 10px 0 !important;
+    }
+    
+    .personalized-message {
+        margin-top: 15px !important;
+    }
+}
