@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Special Greeting - Personalized Messages</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <canvas id="trails-canvas"></canvas>
+    <canvas id="main-canvas"></canvas>
+    
+    <!-- Floating decorations -->
+    <div class="floating-items left">
+        <div class="emoji">🎉</div>
+        <div class="emoji">🎊</div>
+        <div class="emoji">🎈</div>
+        <div class="emoji">🎁</div>
+        <div class="emoji">⭐</div>
+    </div>
+    
+    <div class="floating-items right">
+        <div class="emoji">🎉</div>
+        <div class="emoji">💝</div>
+        <div class="emoji">🎊</div>
+        <div class="emoji">🌟</div>
+        <div class="emoji">🎁</div>
+    </div>
+
+    <!-- Main greeting container -->
+    <div class="container">
+        <!-- Header with animated name -->
+        <h1 class="greeting-title" id="greetingTitle">
+            <span class="letter">H</span>
+            <span class="letter">A</span>
+            <span class="letter">P</span>
+            <span class="letter">P</span>
+            <span class="letter">Y</span>
+            <span class="letter">!</span>
+        </h1>
+
+        <!-- Message section -->
+        <div class="message-section">
+            <p class="subtitle">Sending you joy and happiness</p>
+            <p class="message" id="personalMessage">For someone special like you 🌟</p>
+        </div>
+
+        <!-- Countdown timer -->
+        <div class="countdown" id="countdown">
+            <div class="timer-box">
+                <span class="timer-value" id="days">0</span>
+                <span class="timer-label">Days</span>
+            </div>
+            <div class="timer-box">
+                <span class="timer-value" id="hours">0</span>
+                <span class="timer-label">Hrs</span>
+            </div>
+            <div class="timer-box">
+                <span class="timer-value" id="minutes">0</span>
+                <span class="timer-label">Min</span>
+            </div>
+            <div class="timer-box">
+                <span class="timer-value" id="seconds">0</span>
+                <span class="timer-label">Sec</span>
+            </div>
+        </div>
+
+        <!-- Personalization form -->
+        <div class="form-section">
+            <input type="text" id="nameInput" placeholder="👉 Enter your name here.." maxlength="30" class="name-input">
+            <button id="goBtn" class="go-btn">👉 GO</button>
+        </div>
+
+        <!-- Personalized greeting message -->
+        <div class="personalized-message" id="personalizedMessage">
+            <p id="greetingMessage"></p>
+        </div>
+    </div>
+
+    <!-- Confetti container -->
+    <div id="confetti-container"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
